@@ -1342,9 +1342,5 @@ if __name__ == "__main__":
         for thread in threads:
             print(f"  Thread: {thread}")
     else:
-        print(f"Starting GitSpeak with SQLite persistence and streaming")
-        print(f"Persistent directory: {PERSISTENT_DIR}")
-        print(f"SQLite database: {CHECKPOINT_DB}")
-        print(f"Streaming enabled: True")
         port = int(os.environ.get('PORT', 10000))
         cl.run(debug=False, watch=False, port=port)
