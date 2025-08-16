@@ -1346,5 +1346,5 @@ if __name__ == "__main__":
         print(f"Persistent directory: {PERSISTENT_DIR}")
         print(f"SQLite database: {CHECKPOINT_DB}")
         print(f"Streaming enabled: True")
-        port = int(os.environ.get('PORT', 8000))
-        cl.run(debug=False, watch=False, port=port, host='0.0.0.0')
+        port = int(os.environ.get('PORT', 10000))
+        cl.run(debug=False, watch=False, port=port)
