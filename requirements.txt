@@ -6,3 +6,5 @@ langgraph
 pydantic
 python-dotenv
 GitPython
+langchain_community
+langgraph-checkpoint-sqlite
