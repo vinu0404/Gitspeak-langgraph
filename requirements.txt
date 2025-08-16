@@ -1,0 +1,8 @@
+langchain
+langchain-openai
+faiss-cpu
+chainlit
+langgraph
+pydantic
+python-dotenv
+GitPython
