@@ -1310,6 +1310,7 @@ def get_repository_stats(repo_hash: str):
         return None
 
 
+
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description='GitSpeak with LangGraph, SQLite, and Streaming')
@@ -1342,5 +1343,17 @@ if __name__ == "__main__":
         for thread in threads:
             print(f"  Thread: {thread}")
     else:
-        port = int(os.environ.get('PORT', 10000))
-        cl.run(debug=False, watch=False, port=port)
+        print(f"Starting GitSpeak with SQLite persistence and streaming")
+        print(f"Persistent directory: {PERSISTENT_DIR}")
+        print(f"SQLite database: {CHECKPOINT_DB}")
+        print(f"Streaming enabled: True")
+        
+        # Get port from environment variable (Render sets this automatically)
+        port = 8000
+        cl.run(
+            debug=False, 
+            watch=False, 
+            port=port, 
+            host='0.0.0.0',
+            headless=True 
+        )
