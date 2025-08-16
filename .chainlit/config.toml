@@ -1,0 +1,61 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = true
+
+[features]
+# Process and display mathematical expressions and LaTeX (default: false)
+latex = true
+
+[UI]
+# Name of the app and chatbot.
+name = "GitSpeak"
+
+# Show the readme while the conversation is empty.
+show_readme_as_default = true
+
+# Description of the app and chatbot. This is used for HTML tags.
+description = "AI-Powered GitHub Repository Analysis"
+
+# Large size content are by default collapsed for a cleaner ui
+default_collapse_content = true
+
+# The default value for the expand messages settings.
+default_expand_messages = false
+
+# Hide the chain of thought details from the user in the UI.
+hide_cot = true
+
+# Link to your github repo. This will add a github button in the UI's header.
+# github = ""
+
+# Specify a CSS file that can be used to customize the user interface.
+# The CSS file can be served from the public directory or from an external URL.
+# custom_css = "/public/style.css"
+
+# Override default MUI light theme. (Check theme.ts)
+[UI.theme]
+#layout = "wide"
+#font_family = "Inter, sans-serif"
+
+[UI.theme.light]
+#background = "#FAFAFA"
+#paper = "#FFFFFF"
+
+[UI.theme.dark]
+background = "#1e1e1e"
+paper = "#2d2d2d"
+
+[meta]
+generated_by = "1.0.0"
+
+[server]
+# Whether to watch files for changes and automatically reload the app (default: true in dev, false in prod)
+watch = false
+# Whether to allow origins like https://mydomain.com to make requests to the app (default: false)
+allow_origins = ["*"]
+# Whether to automatically reload the app when files change (default: true in dev)
+auto_reload = false
+# Port to run the server on (default: 8000)
+port = 8000
+# Host to run the server on (default: "localhost")
+host = "0.0.0.0"
