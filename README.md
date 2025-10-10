@@ -1,5 +1,5 @@
 # GitSpeak
-### Deploy("https://gitspeak-langgraph.onrender.com")
+### Deploy("https://gitspeak-langgraph-mcp1.onrender.com")
 An AI-powered GitHub repository analyzer using LangGraph for structured workflows and real-time streaming responses.
 
 ## Features
